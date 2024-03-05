@@ -1,0 +1,79 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+    background-color: transparent;
+    font-family: 'Roboto', Arial;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    place-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 96%;
+    height: 50px;
+    margin: 7px;
+    border-radius: 14px;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25) inset,
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3) inset;
+}
+.dashboard p {
+    display: none;
+    margin-left: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 260px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: scroll;
+
+}
+.button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.all-button-flex-div {
+    display: flex;
+    flex-direction: row;
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 12px;
+    position: relative;
+}
+button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    color: rgba(200, 212, 13, 1);
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+button:active {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25) inset,
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3) inset;
+}
+span {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 1px solid #676A67;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
